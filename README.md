@@ -120,5 +120,14 @@ By using ALM-Bench, you agree not to use the dataset for any harm or unfair disc
 ## 📜 Citation
 If you find our work and this repository useful, please consider giving our repo a star and citing our paper as follows:
 ```bibtex
-asdasd
+
 ```
+
+## 🙏 Acknowledgements
+
+This repository has borrowed Video-LMM evaluation code from [TimeChat](https://github.com/RenShuhuai-Andy/TimeChat) and [LLaMA-VID](https://github.com/dvlab-research/LLaMA-VID). We also borrowed partial code from [ALM-Bench](https://github.com/mbzuai-oryx/ALM-Bench/), [CVRR-Evaluation-Suit](https://github.com/mbzuai-oryx/CVRR-Evaluation-Suite) repository. We thank the authors for releasing their code.
+
+---
+<p align="center">
+   <a href="https://www.crcv.ucf.edu/"><img src="Assets/crcv_ucf.jpg" width="500" height="90"></a>
+</p>
