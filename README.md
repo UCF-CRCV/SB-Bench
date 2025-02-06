@@ -58,11 +58,6 @@
 
 > <p align="justify"> <b> <span style="color: blue;">Table</span></b>: Bias Types: Examples from the nine bias categories. The source which identifies the bias is reported. </p>
 
-#### Below we present the dataset distribution in `SB-Bench` across nine social bias categories.
-<p align="center">
-   <img src="Assets/category_distribution_v2.png" alt="Category Comparison table"></a>
-</p>
-
 <hr />
 
 ## 🔍 Dataset Annotation Process
@@ -95,6 +90,26 @@ The below Barplot presents the Bias-Score evaluation results of various recent L
 <hr />
 
 ## 🚀 Getting started with SB-Bench
+
+### Downloading and Setting Up SB-Bench Dataset
+SB-Bench dataset can be downloaded from our [huggingface](). SB-Bench consists of 7,500 question-answer (MCQ) pairs spanning over nine social bias categories languages. The general structure of our dataset looks like the following:
+
+```
+SB-Bench/
+|–– Age/
+|   |–– age_1.jpg
+|   |–– age_2.jpg
+|   |–– age_3.jpg
+|   |–– ... # remaining samples
+... # remaining categories
+```
+
+Data Fields
+```
+- 'file_name': , 
+- 'ID': A unique ID in the language#_cat#_img# format. 
+- 'Image_Url': The image URL that we have retrieved from the internet.
+```
 
 <hr />
 
