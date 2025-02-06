@@ -4,26 +4,28 @@
     <img src="https://i.imgur.com/waxVImv.png" alt="SB-Bench">
 </p>
 
-<p align="center">
+<p align="left">
    <a href="https://github.com/UCF-CRCV/SB-Bench/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CC--BY--NC%204.0-blue" alt="license"></a>
 </p>
 
 [Vishal Narnaware](https://www.linkedin.com/in/vishalnarnaware/)* , [Ashmal Vayani](https://scholar.google.com/citations?user=K4KF1SwAAAAJ&hl=en&oi=ao)* , [Rohit Gupta](https://scholar.google.com/citations?user=0WukQpMAAAAJ&hl=en&oi=ao)<sup>♠</sup> , [Swetha Sirnam](https://scholar.google.com/citations?user=XwocaTcAAAAJ&hl=en&oi=ao)<sup>♠</sup> , [Mubarak Shah](https://scholar.google.com/citations?user=p8gsO3gAAAAJ&hl=en&oi=ao)
-###### * Equal Authors
-#### Center for Research in Computer Vision (University of Central Florida), Amazon
+###### * Equally contributing first authors, <sup>♠</sup> Equally contributing second authors
 
-<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+
+#### University of Central Florida, Amazon
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
 [![Dataset](https://img.shields.io/badge/Dataset-Access-<COLOR>)]()
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
 
+<h5 align="left"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+
 #### Official GitHub repository for  `SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models`.
 ---
 
 ## 📢 Latest Updates
-- **Feb-05-25**- Technical report of SB-Bench is released on [arxiv]()! 🔥🔥
-- **Feb-05-25**- *SB-Bench Dataset* and codes are released. It provides 7,500 visually grounded, non-synthetic multiple-choice QA samples across 9 social bias categories to extensively evaluate the performance of LMMs. 🔥🔥
+- **Feb-06-25**- Technical report of SB-Bench is released on [arxiv]()! 🔥🔥
+- **Feb-06-25**- *SB-Bench Dataset* and codes are released. It provides 7,500 visually grounded, non-synthetic multiple-choice QA samples across 9 social bias categories to extensively evaluate the performance of LMMs. 🔥🔥
 
 ---
 
