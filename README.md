@@ -28,6 +28,14 @@
 ---
 
 ## 🏆 Highlights
+<p align="center">
+  <img src="Assets/teaser_merged.jpg" width="800">
+</p>
+
+
+![main figure](Assets/teaser_merged.jpg)
+> <p align="justify"> <b> <span style="color: blue;">Figure</span></b>: ALM-bench comprises a diverse set of 100 languages with manually verified annotations by respective native language experts. Here, qualitative examples highlight the comprehensive set of 13 cultural aspects covered in the benchmark, such as heritage, customs, architecture, literature, music, and sports. It also evaluates visual understanding for six generic aspects. The ALM-bench focuses on low- resource languages and different regions, spanning 73 countries across five continents and 24 distinct scripts. ALM-bench covers diverse questions, such as multiple choice questions (MCQs), true/false (T/F), short and long visual question answers (VQAs).
+
 
 **Main contributions:**
 1) aaa
