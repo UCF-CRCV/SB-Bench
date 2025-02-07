@@ -16,7 +16,7 @@
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
 [![Dataset](https://img.shields.io/badge/Dataset-Access-<COLOR>)]()
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://ucf-crcv.github.io/SB-Bench/)
 
 <h5 align="left"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
