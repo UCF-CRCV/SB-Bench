@@ -12,7 +12,7 @@
 ###### * Equally contributing first authors, <sup>♠</sup> Equally contributing second authors
 
 
-#### University of Central Florida, Amazon
+#### University of Central Florida
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
 [![Dataset](https://img.shields.io/badge/Dataset-Access-<COLOR>)](https://huggingface.co/datasets/ucf-crcv/SB-Bench)
