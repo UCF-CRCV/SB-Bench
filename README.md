@@ -14,7 +14,7 @@
 
 #### University of Central Florida
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2502.08779)
 [![Dataset](https://img.shields.io/badge/Dataset-Access-<COLOR>)](https://huggingface.co/datasets/ucf-crcv/SB-Bench)
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://ucf-crcv.github.io/SB-Bench/)
 
@@ -24,8 +24,8 @@
 ---
 
 ## 📢 Latest Updates
-- **Feb-06-25**- Technical report of SB-Bench is released on [arxiv]()! 🔥🔥
-- **Feb-06-25**- *SB-Bench Dataset* and codes are released. It provides 7,500 visually grounded, non-synthetic multiple-choice QA samples across 9 social bias categories to extensively evaluate the performance of LMMs. 🔥🔥
+- **Feb-13-25**- Technical report of SB-Bench is released on [arxiv](https://arxiv.org/pdf/2502.08779)! 🔥🔥
+- **Feb-13-25**- *SB-Bench Dataset* and codes are released. It provides 7,500 visually grounded, non-synthetic multiple-choice QA samples across 9 social bias categories to extensively evaluate the performance of LMMs. 🔥🔥
 
 ---
 
