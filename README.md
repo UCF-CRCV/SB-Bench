@@ -14,7 +14,7 @@
 
 #### University of Central Florida
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2502.08779)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.arxiv.org/abs/2502.08779)
 [![Dataset](https://img.shields.io/badge/Dataset-Access-<COLOR>)](https://huggingface.co/datasets/ucf-crcv/SB-Bench)
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://ucf-crcv.github.io/SB-Bench/)
 
@@ -148,14 +148,11 @@ By using ALM-Bench, you agree not to use the dataset for any harm or unfair disc
 ## 📜 Citation
 If you find our work and this repository useful, please consider giving our repo a star and citing our paper as follows:
 ```bibtex
-    @misc{narnaware2025sbbench,
-      title={SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models}, 
-      author={Vishal Narnaware and Ashmal Vayani and Rohit Gupta and Swetha Sirnam and Mubarak Shah},
-      year={2025},
-      eprint={2502.08779},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2502.08779}, 
+    @article{narnaware2025sb,
+      title={SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models},
+      author={Narnaware, Vishal and Vayani, Ashmal and Gupta, Rohit and Sirnam, Swetha and Shah, Mubarak},
+      journal={arXiv preprint arXiv:2502.08779},
+      year={2025}
     }
 ```
 
