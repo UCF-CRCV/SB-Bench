@@ -142,8 +142,8 @@ An example of `test` looks as follows:
 <hr />
 
 ## 📂 License
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The images in ALM-Bench dataset are collected from public domains and sources (refer to [main paper](https://arxiv.org/abs/2411.16508) for more details) and are for academic research use only. 
-By using ALM-Bench, you agree not to use the dataset for any harm or unfair discrimination. Please note that the data in this dataset may be subject to other agreements. Video copyrights belong to the original dataset providers, video creators, or platforms.
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The images in SB-Bench dataset are collected from public domains and sources (refer to [main paper](https://arxiv.org/abs/2411.16508) for more details) and are for academic research use only. 
+By using SB-Bench, you agree not to use the dataset for any harm or unfair discrimination. Please note that the data in this dataset may be subject to other agreements. Video copyrights belong to the original dataset providers, video creators, or platforms.
 
 ## 📜 Citation
 If you find our work and this repository useful, please consider giving our repo a star and citing our paper as follows:
