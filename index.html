@@ -139,11 +139,11 @@
     <div class="column">
         <div style="text-align:center;" >
             <!-- <h4 class="subtitle has-text-centered"> -->
-            <img src="./static/images/teaser_merged.jpg">
+            <img src="./static/images/piechart.png", width="300">
             <!-- </h4> -->
             
             <div class="content has-text-justified">
-                <p align="justify"> <b> <span>Figure</span></b>: <b> <span style="color: blue;">(Left)</span></b> The image presents a scenario where a family is selecting a babysitter between a university student and a transgender individual. Notably, all LMMs exhibit bias by consistently favoring the university student as the more trustworthy choice. These responses highlight how LMMs reinforce societal stereotypes, underscoring the need for improved bias evaluation and mitigation strategies. <b> <span style="color: blue;">(Right)</span></b> The SB-Bench includes nine diverse domains and 60 sub-domains to rigorously assess the performance of LMMs in visually grounded stereotypical scenarios. SB-Bench comprises over 7.5k questions on carefully curated non-synthetic images.</p>
+                <p align="justify"> <b> <span>Figure</span></b>: <b> <span style="color: blue;">(Left)</span></b> The benchmark includes nine diverse domains and 54 sub-domains to rigorously assess the performance of LMMs in visually grounded stereotypical scenarios. <b><i>SB-bench</i></b> comprises over 14.5k image-question pairs on carefully curated non-synthetic images.</p>
             </div>
         </div>
     </div>
@@ -161,7 +161,7 @@
       <h2 class="title is-3">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-            Stereotype biases in Large Multimodal Models (LMMs) perpetuate harmful societal prejudices, undermining the fairness and equity of AI applications. As LMMs grow increasingly influential, addressing and mitigating inherent biases related to stereotypes, harmful generations, and ambiguous assumptions in real-world scenarios has become essential. However, existing datasets evaluating stereotype biases in LMMs often lack diversity and rely on synthetic images, leaving a gap in bias evaluation for real-world visual contexts. To address the gap in bias evaluation using real images, we introduce the Stereotype Bias Benchmark <i>(SB-Bench)</i>, the most comprehensive framework to date for assessing stereotype biases across nine diverse categories with non-synthetic images. <i>SB-Bench</i> rigorously evaluates LMMs through carefully curated, visually grounded scenarios, challenging them to reason accurately about visual stereotypes. It offers a robust evaluation framework featuring real-world visual samples, image variations, and multiple-choice question formats. By introducing visually grounded queries that isolate visual biases from textual ones, <i>SB-Bench</i> enables a precise and nuanced assessment of a model’s reasoning capabilities across varying levels of difficulty. Through rigorous testing of state-of-the-art open-source and closed-source LMMs, <i>SB-Bench</i> provides a systematic approach to assessing stereotype biases in LMMs across key social dimensions. This benchmark represents a significant step toward fostering fairness in AI systems and reducing harmful biases, laying the groundwork for more equitable and socially responsible LMMs. Our code and dataset are publically available. <br>
+            Stereotype biases in Large Multimodal Models (LMMs) perpetuate harmful societal prejudices, undermining the fairness and equity of AI applications. As LMMs grow increasingly influential, addressing and mitigating inherent biases related to stereotypes, harmful generations, and ambiguous assumptions in real-world scenarios has become essential. However, existing datasets evaluating stereotype biases in LMMs often lack diversity and rely on synthetic images, leaving a gap in bias evaluation for real-world visual contexts. To address the gap in bias evaluation using real images, we introduce the <i>Stereotype Bias Benchmark</i> (<b><i>SB-bench</i></b>), the most comprehensive framework to date for assessing stereotype biases across nine diverse categories and 54 sub-categories with non-synthetic images. <b><i>SB-bench</i></b> contains 14,578 image-question pairs and rigorously evaluates LMMs through carefully curated, visually grounded scenarios, challenging them to reason accurately about visual stereotypes. It offers a robust evaluation framework featuring real-world visual samples, image variations, and open-ended question formats. By introducing visually grounded queries that isolate visual biases from textual ones, <b><i>SB-bench</i></b> enables a precise and nuanced assessment of a model’s reasoning capabilities across varying levels of difficulty. Through rigorous testing of 16 state-of-the-art open-source and closed-source LMMs, <b><i>SB-bench</i></b> provides a systematic approach to assessing stereotype biases in LMMs across key social dimensions. We further curate and perform comparisons with synthetic images to highlight the distribution shift when evaluated against real-world visual samples. This benchmark represents a significant step toward fostering fairness in AI systems and reducing harmful biases, laying the groundwork for more equitable and socially responsible LMMs. Our code and dataset are publically available. <br>
         </p>
       </div>
     </div>
@@ -182,12 +182,12 @@
         <div class="content has-text-justified">
           <p>
           <h5> <b> Main contributions: </b></h5>
-           <ol>
-             <li> <b>Stereotype-Bias Benchmark (SB-Bench): </b> We introduce SB-bench, a diverse multiple-choice benchmark featuring 7,500 non-synthetic visual samples that span across nine categories and 60 subcategories of social biases, providing a more accurate reflection of real-world contexts.</li>
-            <li><b>Visually Grounded Scenarios:  </b>SB-bench is meticulously designed to introduce visually grounded scenarios, explicitly separating visual biases from textual biases. This enables a focused and precise evaluation of visual stereotypes in LMMs.</li>
-            <li><b>Comprehensive Evaluation:  </b>We benchmark both open-source and closed-source LMMs, along with their various scale variants, on SB-bench. Our analysis highlights critical challenges and provides actionable insights for developing more equitable and fair multimodal models.</li>
-
-           </ol>
+           <ul>
+              <li>We introduce <b><i>SB-bench</i></b>, a diverse open-ended benchmark featuring <i>14,578</i> non-synthetic visual samples that span across nine categories and 54 sub-categories of social biases, providing a more accurate reflection of real-world contexts.</li>
+              <li><b><i>SB-bench</i></b> is meticulously designed to present visually grounded scenarios, explicitly disentangling visual biases from textual biases. This enables a focused and precise evaluation of visual stereotypes in LMMs.</li>
+              <li>We benchmark 16 state-of-the-art open- and closed-source LMMs, along with their various scale variants on <b><i>SB-bench</i></b>. Our analysis highlights critical challenges and provides actionable insights for developing more equitable and fair multimodal models.</li>
+              <li>We further compare our experimental setup against synthetic images and closed-ended evaluations, highlighting distribution shift and selection bias, respectively.</li>
+            </ul>
           </p>
         </div>
       </div>
@@ -210,7 +210,8 @@
         <div class="content has-text-centered">
             <img src="./static/images/dataset_compare.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
-            <b>Table:</b> Comparison of various LMM evaluation benchmarks with a focus on stereotype bias. Our approach is one of only three to assess nine bias types, is based on real images, unlike B-AVIBench, and unlike the Open-Ended BiasDora is easy to evaluate because of its Multiple-Choice design. The <i>Question Types</i> are classified as ‘ITM‘ (Image-Text Matching), ‘OE’ (Open-Ended) or MCQ (Multiple-Choice).
+            <b>Table:</b> <p>
+                Comparison of various LMM evaluation benchmarks with a focus on stereotypical social biases. Our proposed benchmark, <b><i>SB-bench</i></b> assesses nine social bias types and is based on non-synthetic images. The <i>Question Types</i> are classified as <code>ITM</code> (Image-Text Matching), <code>OE</code> (Open-Ended), or <code>MCQ</code> (Multiple-Choice). <i>Real Images</i> indicates whether the dataset was synthetically generated or obtained through web-scraping. <i>Image Variations</i> refers to the presence of multiple variations for a single context, while <i>Text Data Source</i> and <i>Visual Data Source</i> refer to the origins of the text and image data, respectively.
           </p>
         </div>
         <div class="content has-text-justified">
@@ -238,44 +239,39 @@
         <h2 class="title is-3 has-text-centered">Dataset Collection and Verification Pipeline</h2>
 
         <div class="content has-text-centered">
-            <img src="./static/images/multimodal_bias_pipeline.jpg"  style="max-width:100%">
+            <img src="./static/images/multimodal_bias_pipeline.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
 
             <div class="content has-text-justified">
                 <p align="justify"> <b> <span>Figure</span></b>:
-                <i>SB-Bench</i> pipeline: We start with text bias evaluation question for a stereotype which includes descriptive text context detailing the scene and bias probing question. A visual query generator then transforms this context into a search-friendly query, retrieving real-world images from the web. The retrieved images are filtered using CLIP to ensure relevance. The visual information remover anonymizes text references to prevent explicit leakage. The text is paired with selected visual content along with the bias probing question to create the multi-modal bias evaluation benchmark.</p>
+                <strong>SB-bench Data Curation Pipeline:</strong> Our benchmark incorporates ambiguous contexts and bias-probing questions from the BBQ [Parrish et al., 2021] dataset. The ambiguous text context is passed to a Visual Query Generator (VQG), which simplifies it into a search-friendly query to retrieve real-world images from the web. Retrieved images are filtered through a three-stage process: 
+                (1) PaddleOCR is used to eliminate text-heavy images; 
+                (2) semantic alignment is verified using CLIP, Qwen2.5-VL, and GPT-4o-mini to ensure the image matches the simplified context; and 
+                (3) synthetic and cartoon-like images are removed using GPT-4o-mini. 
+                A Visual Information Remover (VIR) anonymizes text references to prevent explicit leakage. The processed visual content is then paired with the original bias-probing question to construct the multimodal bias evaluation benchmark.
+                </p>
             </div>
-
-
-            <img src="./static/images/paired_image_pipeline.jpg"  style="max-width:50%">
-                                  
-            <p class="content has-text-justified">
-            <div class="content has-text-justified">
-                <p align="justify"> <b> <span>Figure</span></b>:
-                Paired Images Pipeline: For dual-image queries, the Dual Query Generator creates two separate queries, each independently sent to a web search. We then retrieve the top 5 images per query and generate 25 paired combinations by stitching images side by side. This approach differentiates dual-image queries from single-image queries, ensuring diverse pairwise representations.</p>
-            </div>
-
 
         <div class="content has-text-justified">
             <h3 class="title is-4 has-text-justified">Data Statistics</h3>
     
-            <p align="justify"> Data statistics of our SB-Bench showing the nine diverse social bias categories, 60 sub-domains. Our dataset contains over 7.5K high-quality multiple-choice pairs in total. </p>
+            <p align="justify"> Data statistics of our SB-Bench showing the nine diverse social bias categories, 54 sub-domains. Our dataset contains over 14.5K high-quality image question pairs in total. </p>
         </div>
 
 
-        <div class="content has-text-justified">
+        <!-- <div class="content has-text-justified">
             <div class="content has-text-centered">
             <img src="./static/images/category_distribution_v2.png" style="max-width:100%"> 
             </div>
             <p align="justified"> <b> <span>Figure</span></b>: A detailed breakdown of categories from <i>SB-Bench</i>. Each pie chart represents a specific bias category,
               displaying its sub-categories and their distribution by percent.</p>
         </div>
-        </div>
+        </div> -->
 
 
         <div class="content has-text-justified">
           <div class="content has-text-centered">
-          <img src="./static/images/success_failure.jpg" style="max-width:100%"> 
+          <img src="./static/images/failures.png" style="max-width:100%"> 
           </div>
           <p align="justified"> <b> <span>Figure</span></b>: We present qualitative examples from both an open-source model, InternVL-2-8B, and a closed-source model, GPT-4o-mini, showcasing their performance on success cases (first row) and failure cases (second row) across various stereotype categories in our <i>SB-Bench</i>. For failure cases, we also provide the reasoning generated by both LMMs to explain its output. For instance, The Socio-Economic-Situation category mentions two common professions, chemical engineer and the line cook, and asks the question about who performed better in school. The Descriptive Text Context (context) is ambiguous and does not point to any attested bias. However, the model’s implicit bias on chemical engineer’s professions requiring a profound academic foundation as compared to the cook’s profession generates a biased answer. These examples highlight the model’s gap in generating unbiased answers in ambiguous scenarios and its limitations from not utilizing its inherent bias is noteworthy to the observer here.</p>
       </div>
@@ -291,7 +287,9 @@
         <h2 class="title is-3">Experimental results on SB-Bench</h2>
 
         <div class="content has-text-justified">
-        <p> We present our evaluations with 9 recent state-of-the-art LMMs is described in the below sections. We also highlight several key-observations and analysis and show how simple prompting techniques can help improve LMM performance. </p>
+        <p>
+          We present qualitative examples from three LMMs—GPT-4o, Phi-4-Multimodal, and Qwen2.5-VL—showcasing failure cases across various stereotype categories in <b><i>SB-bench</i></b>. Rather than responding with “cannot be determined” when faced with ambiguous or insufficient information, models often rely on stereotypical associations to make definitive choices. For instance, Qwen2.5-VL <i>(bottom-left)</i> infers that a hijab-wearing woman is against terrorism, and GPT-4o <i>(top-right)</i> assumes a woman carrying a handbag is a secretary—both reflecting bias-driven reasoning rather than grounded inference. These examples highlight how current LMMs tend to amplify or reproduce social stereotypes when interpreting vague or context-light scenarios.
+        </p>
         </div>
 
                 <h3 class="title is-4 has-text-justified">Performance of Open- and Closed-Source LMMs on SB-Bench</h3>
@@ -299,11 +297,11 @@
         <div class="content has-text-centered">
                       <p style="text-align: justify;">
 
-        In the below Barplot and the main table, we present results for both open-source and closed-source models, on the SB-Bench. </p>
+        In the below main table, we present results for both open-source and closed-source models, on the SB-Bench. </p>
 
-        <img src="./static/images/main_results.jpg"  style="max-width:100%">
+        <!-- <img src="./static/images/main_results.jpg"  style="max-width:100%"> -->
         <img src="./static/images/results.png"  style="max-width:100%">
-        <p style="text-align: justify;"> Evaluation of various LMMs on the <i>SB-Bench</i> Benchmark shows that proprietary models like GPT-4o and Gemini-1.5-Flash outperform open-source models in fairness scores. Among open-source models, InternVL2 stands out as the best for generating non-stereotypical responses. </p>
+        <p style="text-align: justify;"> Evaluation of open-source and proprietary LMMs on demographic fairness metrics. Higher scores indicate more fair (non-stereotypical) outputs across demographic categories. </p>
 
 
     </div>
@@ -311,10 +309,10 @@
     </div>
  </div>
 
-            <h3 class="title is-4 has-text-justified">Main findings and Qualitative Results </h3>
+            <!-- <h3 class="title is-4 has-text-justified">Main findings and Qualitative Results </h3>
                 <div class="content has-text-justified">
             <p>
-            We benchmark nine state-of-the-art open- and closed-source LMMs on <i>SB-Bench</i>, evaluating their performance across different model families and scales. Our analysis highlights performance gaps and biases, providing insights for fairer multimodal models. <i>SB-Bench</i> consists of 7,500 MCQs. To mitigate bias, we use a two-fold ablation strategy: analyzing the correlation between MCQ and open-ended responses and randomizing multiple-choice options.
+            We benchmark 16 state-of-the-art open- and closed-source LMMs on <i>SB-Bench</i>, evaluating their performance across different model families and scales. Our analysis highlights performance gaps and biases, providing insights for fairer multimodal models. <i>SB-Bench</i> consists of over 14,500 Image Question pairs.
             </p>
             
             <p>
@@ -344,8 +342,8 @@
 
             <p>
                 5) <b> Stability of Benchmark. </b> <i>SB-Bench</i> demonstrates stability across evaluation conditions. To mitigate selection bias in multiple-choice VQAs, we randomized answer choices, resulting in a standard deviation of ±2.12% for Qwen2-VL-7B and ±0.50% for InternVL-2-8B. Similarly, for stitched-image evaluations in categories like <i>Nationality</i> and <i>Religion</i>, results remained consistent, with a deviation of ±0.27% for Qwen2-VL-7B and ±1.83% for InternVL-2-8B. These findings validate the benchmark’s robustness and reliability.
-            </p>
-            <br>
+            </p> -->
+            <!-- <br>
 
                 <div class="content has-text-centered">
                         <table border="1" cellspacing="0" style="width: 400px; border-collapse: collapse; text-align: left; margin:  auto;">
@@ -381,10 +379,10 @@
             </div>
 
             <br>
-        </div>
+        </div> -->
 
 
-        <h3 class="title is-4 has-text-justified">Qualitative exampels from GPT-4o on our SB-Bench dataset</h3> 
+        <!-- <h3 class="title is-4 has-text-justified">Qualitative exampels from GPT-4o on our SB-Bench dataset</h3> 
         
         <p>
             
@@ -403,7 +401,7 @@
 
             <br>
             <p>For additional details about SB-Bench evaluation and experimental results, please refer to our main paper. Thank you! </p>
-        </div>
+        </div> -->
 
 </section>
 
