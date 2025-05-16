@@ -38,6 +38,8 @@ Run this in your terminal to install all the dependencies listed in requirements
 <pre>pip install -r requirements_1.txt</pre>
 
 ## Inference
+
+### Real World Images
 <p align="justify"> 
 
 Activate the environment and edit `HF_TOKEN` in the `Evaluation/run_inference_batch.py` file.
@@ -57,11 +59,32 @@ Replace MODEL_NAME, BATCH_SIZE, and OUTPUT_PATH with your desired values. The pa
 
 </p>
 
+### Synthetic Images
+<p align="justify"> 
+
+Activate the environment and edit `HF_TOKEN` in the `Evaluation/run_inference_batch_synthetic.py` file.
+
+To run Open Ended inference, use:
+
+<pre>python run_inference_batch_synthetic.py -m "MODEL_NAME" --batch-size BATCH_SIZE --output-path "OUTPUT_PATH" --remove-options</pre>
+
+Replace MODEL_NAME, BATCH_SIZE, and OUTPUT_PATH with your desired values. 
+
+
+To run MCQ inference, use:
+
+<pre>python run_inference_batch_synthetic.py -m "MODEL_NAME" --batch-size BATCH_SIZE --output-path "OUTPUT_PATH" </pre>
+
+Replace MODEL_NAME, BATCH_SIZE, and OUTPUT_PATH with your desired values. The parameters can be left as it is, by default is loads `llava-one-vision-7B` model with batch_size as `64` and output path as `outputs/`.
+
+</p>
+
 
 ---
 ## Evaluation/Scoring
+### Real World Images
 <p>
-To evaluate the RuA of different models, first enter your Azure OpenAI API keys in the <i>Evaluation/scoring/main/oe</i>  01, 02, 03, 04 files and run them in the order by following commands:
+To evaluate the *RuA* of different models, first enter your Azure OpenAI API key and endpoint in the <i>Evaluation/scoring/main/oe or mcq</i>  01, 02, 03, 04 files and run them in the order by following commands:
 </p>
 <pre>python 01_filter.py --base_path "BASE_PATH"
 python 02_submit_file.py
@@ -72,7 +95,22 @@ python 05_merge.py --base_path "BASE_PATH"
 
 The BASE_PATH is the output folder of inference results of LMMs. If it is left blank then the code considers `outputs/lmm_outputs` directory.
 
-After this, run:
+After this, run `detailed_get_scores.py` in the *Evaluation/scoring/main/* directory:
+<pre>python detailed_get_scores.py</pre>
+
+### Synthetic Images
+To evaluate the *RuA* of different models, first enter your Azure OpenAI API key and endpoint in the <i>Evaluation/scoring/synthetic/oe or mcq</i>  01, 02, 03, 04 files and run them in the order by following commands:
+</p>
+<pre>python 01_filter.py --base_path "BASE_PATH"
+python 02_submit_file.py
+python 03_submit_job.py
+python 04_retrieve.py
+python 05_merge.py --base_path "BASE_PATH"
+</pre>
+
+The BASE_PATH is the output folder of inference results of LMMs. If it is left blank then the code considers `outputs/lmm_outputs_synthetic` directory.
+
+After this, run `detailed_get_scores.py` in the *Evaluation/scoring/synthetic/* directory:
 <pre>python detailed_get_scores.py</pre>
 
 ---
@@ -163,14 +201,14 @@ Data Fields
 - 'question': A bias probing non-negative question.
 - 'ans0': Option 1, one of the possible answer for the question. 
 - 'ans1': Option 2, one of the possible answer for the question. 
-- 'ans2': Option 3, one of the possible answer for the question.
+- 'ans2': Option 3, one of the possible answer for the question. 
 - 'label': Ground Truth.
 ```
 
 # Dataset Structure
 
 ## Data Instances
-An example of `test` looks as follows:
+An example of `real/synthetic` looks as follows:
 ```
 {'file_name': <PIL.JpegImagePlugin.JpegImageFile image mode=RGB>,
  'id': '01_01_0001_1_01',
