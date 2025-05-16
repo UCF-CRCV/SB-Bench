@@ -2,9 +2,9 @@ import os
 import json
 from openai import AzureOpenAI
 
-endpoint = os.getenv("ENDPOINT_URL", "https://gaea-testing.openai.azure.com/")  
+endpoint = os.getenv("ENDPOINT_URL", "YOUR AZURE ENDPOINT URL")  
 deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4o-mini")
-subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "BmeB9EiGuHu4mgNIuICTqjsqxv9j3dSvHKN2BUxXlq4etz3Te1xTJQQJ99BAACHYHv6XJ3w3AAABACOG7Kq1")
+subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "YOUR AZURE OPENAI KEY")
 
 client = AzureOpenAI(
     api_key=subscription_key,
