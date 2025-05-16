@@ -53,15 +53,37 @@ To run MCQ inference, use:
 
 <pre>python run_inference_batch.py -m "MODEL_NAME" --batch-size BATCH_SIZE --output-path "OUTPUT_PATH" </pre>
 
-Replace MODEL_NAME, BATCH_SIZE, and OUTPUT_PATH with your desired values. 
+Replace MODEL_NAME, BATCH_SIZE, and OUTPUT_PATH with your desired values. The parameters can be left as it is, by default is loads `llava-one-vision-7B` model with batch_size as `64` and output path as `outputs/`.
 
 </p>
+
+
+---
+## Evaluation/Scoring
+<p>
+To evaluate the RuA of different models, first enter your Azure OpenAI API keys in the <i>Evaluation/scoring/main/oe</i>  01, 02, 03, 04 files and run them in the order by following commands:
+</p>
+<pre>python 01_filter.py --base_path "BASE_PATH"
+python 02_submit_file.py
+python 03_submit_job.py
+python 04_retrieve.py
+python 05_merge.py --base_path "BASE_PATH"
+</pre>
+
+The BASE_PATH is the output folder of inference results of LMMs. If it is left blank then the code considers `outputs/lmm_outputs` directory.
+
+After this, run:
+<pre>python detailed_get_scores.py</pre>
+
 ---
 
 ## 🏆 Highlights
 
-![main figure](Assets/piechart.png)
-> <p align="justify"> <b> <span style="color: blue;">Figure</span></b>: <i>(Left): </i> The SB-Bench includes nine diverse domains and 54 sub-domains to rigorously assess the performance of LMMs in visually grounded stereotypical scenarios. SB-Bench comprises over 14.5k questions on carefully curated non-synthetic images.
+<p align="center">
+  <img src="Assets/piechart.png" alt="main figure" width="400"/>
+</p>
+
+> <p align="justify"> <b> <span style="color: blue;">Figure</span>:The SB-Bench includes nine diverse domains and 54 sub-domains to rigorously assess the performance of LMMs in visually grounded stereotypical scenarios. SB-Bench comprises over 14.5k questions on carefully curated non-synthetic images.
 
 > **<p align="justify"> Abstract:** *Stereotype biases in Large Multimodal Models (LMMs) perpetuate harmful societal prejudices, undermining the fairness and equity of AI applications. As LMMs grow increasingly influential, addressing and mitigating inherent biases related to stereotypes, harmful generations, and ambiguous assumptions in real-world scenarios has become essential. However, existing datasets evaluating stereotype biases in LMMs often lack diversity and rely on synthetic images, leaving a gap in bias evaluation for real-world visual contexts. To address the gap in bias evaluation using real images, we introduce the* **Stereotype Bias Benchmark** (**SBbench**), *the most comprehensive framework to date for assessing stereotype biases across nine diverse categories and 54 sub-categories with non-synthetic images.* **SBbench** *contains 14,578 image-question pairs and rigorously evaluates LMMs through carefully curated, visually grounded scenarios, challenging them to reason accurately about visual stereotypes. It offers a robust evaluation framework featuring real-world visual samples, image variations, and open-ended question formats. By introducing visually grounded queries that isolate visual biases from textual ones,* **SBbench** *enables a precise and nuanced assessment of a model’s reasoning capabilities across varying levels of difficulty. Through rigorous testing of 16 state-of-the-art open-source and closed-source LMMs,* **SBbench** *provides a systematic approach to assessing stereotype biases in LMMs across key social dimensions. We further curate and perform comparisons with synthetic images to highlight the distribution shift when evaluated against real-world visual samples. This benchmark represents a significant step toward fostering fairness in AI systems and reducing harmful biases, laying the groundwork for more equitable and socially responsible LMMs.*
  </p>
